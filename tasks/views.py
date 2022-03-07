@@ -1020,6 +1020,7 @@ major_cities = {
 
 current_state = ""
 
+@csrf_exempt
 def tasks(request):
     current_state = ""
     if request.method == 'POST':
