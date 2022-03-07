@@ -53,6 +53,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'quickstartproject.urls'
 
+CSRF_TRUSTED_ORIGINS = ['https://msdocs-python-webapp-quickstart-nomdal.azurewebsites.net/']
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
