@@ -17,6 +17,7 @@
     <p>
     <h1>Notable Cities</h1>
     <form action="{% url 'tasks' %}">
+    {% csrf_token %}
       {% if current_state != "" %}
       {% for m in major_cities|access:current_state %}
       <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -29,6 +30,7 @@
     <p>
     <h1>National Parks</h1>
     <form action="{% url 'tasks' %}">
+    {% csrf_token %}
       {% if current_state != "" %}
       {% for n in national_parks|access:current_state %}
       <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -41,6 +43,7 @@
     <p>
     <h1>State Parks</h1>
     <form action="{% url 'tasks' %}">
+    {% csrf_token %}
       {% if current_state != "" %}
       {% for s in state_parks|access:current_state %}
       <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
