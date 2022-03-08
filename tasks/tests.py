@@ -2,11 +2,11 @@ from django.test import TestCase
 
 class YourTestClass(TestCase):
     def setUp(self):
-        print("Setting up")
+        print("Setting things up")
         pass
 
     def tearDown(self):
-        print("Tearing down")
+        print("Tearing things down")
         pass
 
     def test_something_that_will_pass(self):
